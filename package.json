@@ -4,10 +4,12 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "istanbul cover _mocha -- ./test",
+		"test": "npm run mocha",
 		"start": "npm run build && gulp start",
 		"clean": "gulp clean",
-		"build": "gulp build"
+		"build": "gulp build",
+		"mocha": "mocha -c",
+		"mocha:watch": "npm run mocha -- -w"
 	},
 	"author": {
 		"name": "Alex Feinstein",
